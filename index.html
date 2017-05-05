@@ -14,15 +14,17 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active"> <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">Account</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">Alerts</a> </li>
-          <li class="nav-item"><a class="nav-link" href="#">Admin</a></li>
-          <li class="nav-item"> <a class="nav-link disabled" href="#">Coins</a> </li>
+          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Account</a>
+            <div class="dropdown-menu"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a> </div>
+          </li>
+          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Alerts</a> </li>
+          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a> </div>
+          </li>
         </ul>
         <form class="form-inline my-2 my-lg-0"> <input class="form-control mr-sm-2" type="text" placeholder="Search"> <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> </form>
       </div>
-    </div>
-  </nav>
+    </div> <a class="badge badge-default" href="#">80 Coins</a> </nav>
   <div class="section text-center py-4">
     <div class="container">
       <div class="row">
@@ -67,23 +69,27 @@
                 <th>Product name</th>
                 <th>Author</th>
                 <th>Price</th>
+                <th>Approval</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Product 1</td>
+                <td class="">Product 1</td>
                 <td>Amiroslo</td>
                 <td>12 Coins</td>
+                <td><span class="badge badge-danger">Waiting Approval</span></td>
               </tr>
               <tr>
                 <td>Product 2</td>
                 <td>Amiroslo</td>
                 <td>32 Coins</td>
+                <td><span class="badge badge-success">Approved</span></td>
               </tr>
               <tr>
                 <td>Product 3</td>
                 <td>NotAmiroslo</td>
                 <td>48 Coins</td>
+                <td><span class="badge badge-danger">Waiting Approval</span></td>
               </tr>
             </tbody>
           </table>
